@@ -1,0 +1,22 @@
+[
+	{
+		"id": "id1",
+		"label": "List id label 1"	
+	},
+	{
+		"id": "id2",
+		"label": "List id label 2"	
+	},
+	{
+		"id": "id3",
+		"label": "List id label 3"	
+	},
+	{
+		"id": "id4",
+		"label": "List id label 4"	
+	},
+	{
+		"id": "id5",
+		"label": "List id label 5"	
+	}
+]

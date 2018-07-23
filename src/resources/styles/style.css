@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'test-font';
+    src: url('../fonts/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body * {
+	font-family: 'test-font';
+	box-sizing: border-box;
+}
+h4 {
+	margin: 0px;
+	text-align: center;
+}
+.box {
+	background-color: #dedede;
+	border-radius: 2px;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	box-shadow: 0 10px 6px -6px #777;
+	margin: 1rem 0.1rem;
+}
+
+.button {
+    display: inline-block;
+    min-height: 2.5rem;
+    padding: .5rem 1rem;
+    background: #ba0000;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: .1875rem;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased
+}
+
+.button:hover {
+    text-decoration: none;
+    background: #f20c1a
+}
+
+.button:focus {
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2) inset
+}
+
+.button--shadow {
+    padding: .4375rem 1rem;
+    background: #fff;
+    color: #e00;
+    border: 1px solid #e00
+}
+
+.button--shadow:hover {
+    background: #fff
+}
+
+.button--shadow:focus {
+    border: 1px solid #e00;
+    box-shadow: 0 0 0 #000
+}
+
+.button--shadow.button--large {
+    padding: .6875rem 2rem
+}
+
+.button--shadow.button--inactive {
+    border: 1px solid #dadada;
+    color: inherit
+}
+
+.button--block {
+    display: block
+}
+
+.button--fullwidth {
+    width: 100%
+}
+
+.button--caps {
+    padding-top: .5rem;
+    text-transform: uppercase;
+    font-size: .875rem;
+    letter-spacing: .1rem
+}
+
+.button--large {
+    min-height: 3.1875rem;
+    padding: .75rem 2rem;
+    font-size: 1.125rem
+}
+
+.button--large-to-small {
+    margin: 1.125rem 0
+}
+
+.button--transparent {
+    background: transparent
+}
+
+.button--transparent:hover {
+    background: transparent
+}
+
+.button--steel {
+    background: #666;
+    -webkit-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out
+}
+
+.button--steel:hover {
+    background: #323232
+}
+
+.button--shadow--steel {
+    color: #666;
+    border-color: #666
+}
+
+.button--shadow--steel:focus {
+    border-color: #666
+}
+
+.button-wrap {
+    width: 100%
+}
+
+.button-wrap--left {
+    text-align: left
+}
+
+.button-wrap--center {
+    text-align: center
+}
+
+.button-wrap--right {
+    text-align: right
+}
+
+.close-button {
+    display: block;
+    padding: 0 .875rem;
+    color: #323232;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: right
+}
+
+.close-button:hover {
+    text-decoration: none
+}
+
+@media only screen and (max-width:47.9375em) {
+    .button {
+        width: 100%
+    }
+    .button--shadow {
+        border: 0;
+        box-shadow: 0 0 0 1px #e00 inset
+    }
+    .button--shadow--steel {
+        box-shadow: 0 0 0 1px #666 inset
+    }
+}
+
+@media only screen and (min-width:48em) {
+    .button--large-to-small {
+        position: relative;
+        top: -.125rem;
+        min-height: 1rem;
+        margin: 0;
+        padding: .25rem;
+        font-size: .875rem;
+        line-height: 1
+    }
+}
+
+@media only screen and (min-width:60em) {
+    .button--right-large {
+        float: right
+    }
+}
+
+.textField {
+  width: 100%;
+ /*height: 3.5rem;*/
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  border: 3px solid #dadada;
+  padding: 0 .75rem;
+  line-height: 3rem;
+}
+
+.textField:focus {
+  outline: 0;
+  border: 3px solid #90e2df;
+}
+
+loader:before, .loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.loader:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:before, .loader:after, .loader {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+
+.loading {
+    position: relative
+}
+
+.loading .loader {
+    visibility: visible;
+    display: block
+}
